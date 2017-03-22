@@ -7,7 +7,6 @@ import 'rxjs/add/operator/switchMap';
 import {Observable} from 'rxjs/Observable';
 
 @Component({
-    moduleId: module.id,
     template: `
     <h2>Heroes</h2>
     <ul class="heroes">
