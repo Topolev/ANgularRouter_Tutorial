@@ -4,9 +4,10 @@ import {FormsModule}    from '@angular/forms';
 import {AppComponent} from "./app.component";
 import {Routes, RouterModule} from "@angular/router";
 import {CrisisListComponent} from "./crisis-list.component";
-import {HeroListComponent} from "./hero-list.component";
+import {HeroListComponent} from "./heroes/hero-list.component";
 import {PageNotFoundComponent} from "./not-found.component";
 import {AppRoutingModule} from "./app-routing.module";
+import {HeroesModule} from "./heroes/heroes.module";
 
 
 
@@ -15,11 +16,12 @@ import {AppRoutingModule} from "./app-routing.module";
     imports: [
         BrowserModule,
         FormsModule,
+        HeroesModule,
         AppRoutingModule
+
     ],
     declarations: [
         AppComponent,
-        HeroListComponent,
         CrisisListComponent,
         PageNotFoundComponent
     ],
